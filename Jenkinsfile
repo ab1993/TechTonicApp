@@ -3,7 +3,7 @@ pipeline{
    stages{
        stage("checkout the code"){
           steps{
-          git: "https://github.com/ab1993/TechTonicApp.git"
+          echo "https://github.com/ab1993/TechTonicApp.git"
           } 
        }
    }
