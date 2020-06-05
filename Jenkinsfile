@@ -12,7 +12,7 @@ pipeline{
    }
     post{
          always{
-            emailext body: 'Hi new build deployed successfully', recipientProviders: [developers()], subject: 'QA ENV BUILD', to: 'absharmasb@gmail.com'
+            emailext body: 'This is QA env build', subject: 'QA Build success', to: 'absharmam@gmail.com'
          }
       }
 }
