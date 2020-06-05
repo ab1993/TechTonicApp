@@ -5,7 +5,7 @@ pipeline{
           steps{
           git "https://github.com/ab1993/TechTonicApp.git"
           } }
-      Stage("QA env"){
+       stage("QA env"){
          steps{
           echo "qa run successfully"
          }
