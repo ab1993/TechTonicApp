@@ -8,6 +8,10 @@ pipeline{
        stage("QA env"){
          steps{
           echo "qa run successfully"
+         }}
+      post{
+         always{
+            emailext body: 'Hi new build deployed successfully', recipientProviders: [developers()], subject: 'QA ENV BUILD', to: 'absharmasb@gmail.com'
          }
       }
    }
