@@ -8,6 +8,7 @@ pipeline{
        stage("QA env"){
          steps{
           echo "qa run successfully"
+          echo "Test run successfully"
          }}
    }
     post{
